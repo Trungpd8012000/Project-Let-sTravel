@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Travel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Reset CSS/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="#">
+          <img
+            src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/logo_dark.png"
+            alt="logo"
+          />
+        </a>
+
+        <ul class="nav">
+          <li><a href="#">trang chủ</a></li>
+          <li><a href="#">giới thiệu</a></li>
+          <li>
+            <a href="#">tour du lịch</a>
+            <div class="subnav">
+              <ul>
+                <li><a href="#">miền bắc</a></li>
+                <li><a href="#">hà nội</a></li>
+                <li><a href="#">sapa</a></li>
+                <li><a href="#">vịnh hạ long</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">miền trung</a></li>
+                <li><a href="#">huế</a></li>
+                <li><a href="#">đà nẵng</a></li>
+                <li><a href="#">phú yên</a></li>
+                <li><a href="#">nha trang</a></li>
+                <li><a href="#">quảng nam</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">miền nam</a></li>
+                <li><a href="#">đà lạt</a></li>
+                <li><a href="#">côn đảo</a></li>
+                <li><a href="#">phan thiết</a></li>
+                <li><a href="#">phú quốc</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">khách sạn</a></li>
+          <li><a href="#">tin tức</a></li>
+          <li><a href="#">liên hệ</a></li>
+        </ul>
+      </header>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- Banner -->
+        <div class="bground banner">
+          <div class="btn-angle btn-angle-left">
+            <button type="button">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+          </div>
+
+          <div class="btn-angle btn-angle-right">
+            <button type="button">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+
+          <div class="content-contain banner__content">
+            <h1 class="text-uppercase text-white">
+              công ty <span>mona</span> travel
+            </h1>
+            <h4 class="text-white">
+              Chuyên tổ chức các tour du lịch trong nước
+            </h4>
+            <p>
+              Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ
+              nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình
+              bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn văn bản chỉ
+              gồm nội dung kiểu “Nội dung, nội dung, nội dung” là nó khiến văn
+              bản giống thật hơn, bình thường hơn.
+            </p>
+            <button type="button" class="btn">
+              xem ngay <i class="fa-solid fa-location-dot"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu">
+          <div class="search">
+            <a href="#"><span class="text-white text-bold">TÌM TOUR</span></a>
+            <a href="#"><span class="text-white text-bold">TÌM HOTEL</span></a>
+          </div>
+          <ul class="menu__form">
+            <li>
+              Danh mục <i class="fa-solid fa-angle-down"></i>
+              <div class="subform">
+                <form>
+                  <div>
+                    <input type="checkbox" name="" id="uncate" />
+                    <label for="uncate" class="text-bold">Uncategorized</label>
+                    <div class="quantity">0</div>
+                    <input type="checkbox" name="" id="hotel" />
+                    <label for="hotel" class="text-bold">Khách sạn</label>
+                    <div class="quantity">3</div>
+                  </div>
+                  <input type="checkbox" name="" id="holiday" />
+                  <label for="holiday" class="text-bold">Tour du lịch</label>
+                  <div class="quantity">24</div>
+                  <div class="regions">
+                    <input type="checkbox" name="" id="north" />
+                    <label for="north" class="text-bold">Miền bắc</label>
+                    <div class="quantity">6</div>
+                    <div class="region__item">
+                      <div>
+                        <input type="checkbox" name="" id="Hanoi" />
+                        <label for="Hanoi" class="text-bold"> Hà Nội </label>
+                        <div class="quantity">2</div>
+                        <input type="checkbox" name="" id="sapa" />
+                        <label for="sapa" class="text-bold"> Sapa </label>
+                        <div class="quantity">2</div>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="halong" />
+                        <label for="halong" class="text-bold">
+                          Vịnh Hạ Long
+                        </label>
+                        <div class="quantity">2</div>
+                      </div>
+                    </div>
+
+                    <input type="checkbox" name="" id="South" />
+                    <label for="South" class="text-bold">Miền nam</label>
+                    <div class="quantity">8</div>
+                    <div class="region__item">
+                      <div>
+                        <input type="checkbox" name="" id="condao" />
+                        <label for="condao" class="text-bold"> Côn đảo </label>
+                        <div class="quantity">2</div>
+                        <input type="checkbox" name="" id="Dalat" />
+                        <label for="Dalat" class="text-bold"> Đà Lạt </label>
+                        <div class="quantity">2</div>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="phanthiet" />
+                        <label for="phanthiet" class="text-bold">
+                          Phan Thiết
+                        </label>
+                        <div class="quantity">2</div>
+                      </div>
+                    </div>
+
+                    <input type="checkbox" name="" id="central" />
+                    <label for="central" class="text-bold">Miền trung</label>
+                    <div class="quantity">10</div>
+                    <div class="region__item">
+                      <div>
+                        <input type="checkbox" name="" id="Danang" />
+                        <label for="Danang" class="text-bold"> Đà Nẵng </label>
+                        <div class="quantity">2</div>
+                        <input type="checkbox" name="" id="Hue" />
+                        <label for="Hue" class="text-bold"> Huế </label>
+                        <div class="quantity">2</div>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="nhatrang" />
+                        <label for="nhatrang" class="text-bold">
+                          Nha Trang
+                        </label>
+                        <div class="quantity">2</div>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="phuyen" />
+                        <label for="phuyen" class="text-bold"> Phú yên </label>
+                        <div class="quantity">2</div>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="" id="quangnam" />
+                        <label for="quangnam" class="text-bold">
+                          Quảng Nam
+                        </label>
+                        <div class="quantity">2</div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li>
+              Giá <i class="fa-solid fa-angle-down"></i>
+              <div class="subform">
+                <form>
+                  <p>
+                    <input type="radio" name="price" id="all" />
+                    <label for="all" class="text-bold" style="color: brown">
+                      All
+                    </label>
+                    <input type="radio" name="price" id="one" />
+                    <label for="one" class="text-bold">0 ₫ - 2,000,000 ₫</label>
+                  </p>
+                  <p>
+                    <input type="radio" name="price" id="two" />
+                    <label for="two" class="text-bold">
+                      2,000,000 ₫ - 5,000,000 ₫
+                    </label>
+                  </p>
+                  <p>
+                    <input type="radio" name="price" id="three" />
+                    <label for="three" class="text-bold">
+                      5,000,000 ₫ - 10,000,000 ₫
+                    </label>
+                  </p>
+                  <p>
+                    <input type="radio" name="price" id="four" />
+                    <label for="four" class="text-bold">
+                      10,000,000 ₫ - 20,000,000 ₫
+                    </label>
+                  </p>
+                  <p>
+                    <input type="radio" name="price" id="five" />
+                    <label for="five" class="text-bold">
+                      20,000,000 ₫ - 50,000,000 ₫
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </li>
+            <li>
+              Số ngày <i class="fa-solid fa-angle-down"></i>
+              <div class="subform">
+                <form>
+                  <div>
+                    <input type="checkbox" name="" id="10" />
+                    <label for="10" class="text-bold">10</label>
+                    <div class="quantity">4</div>
+                    <input type="checkbox" name="" id="2" />
+                    <label for="2" class="text-bold">2</label>
+                    <div class="quantity">3</div>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="3" />
+                    <label for="3" class="text-bold">3</label>
+                    <div class="quantity">4</div>
+                    <input type="checkbox" name="" id="5" />
+                    <label for="5" class="text-bold">5</label>
+                    <div class="quantity">4</div>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="7" />
+                    <label for="7" class="text-bold">7</label>
+                    <div class="quantity">3</div>
+                    <input type="checkbox" name="" id="8" />
+                    <label for="8" class="text-bold">8</label>
+                    <div class="quantity">4</div>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li>
+              Nơi khởi hành <i class="fa-solid fa-angle-down"></i>
+              <div class="subform">
+                <form>
+                  <input type="checkbox" name="" id="hanoi" />
+                  <label for="hanoi" class="text-bold">Hà Nội</label>
+                  <div class="quantity">8</div>
+                  <input type="checkbox" name="" id="hcm" />
+                  <label for="hcm" class="text-bold">Tp.Hồ Chí Minh</label>
+                  <div class="quantity">17</div>
+                </form>
+              </div>
+            </li>
+            <li>
+              <form>
+                <label for="sale-off">Giảm giá</label>
+                <input type="checkbox" name="" id="sale-off" />
+              </form>
+            </li>
+            <li>
+              <button type="button" class="btn">tìm kiếm</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Attractive places -->
+        <div class="content__section">
+          <h2 class="text-uppercase">các tour hấp dẫn nhất 2020</h2>
+          <p>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc.</p>
+
+          <div class="row attract-places">
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/Sapa.jpg"
+                alt="Sapa"
+              />
+              <div class="content-contain items__content">
+                <h3>sapa - lào cai</h3>
+                <div class="icons-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Giá tour: $200</p>
+                <button type="button" class="btn">xem ngay</button>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/Hue.jpg"
+                alt="Hue"
+              />
+              <div class="content-contain items__content">
+                <h3>cố đô huế</h3>
+                <div class="icons-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Giá tour: $220</p>
+                <button type="button" class="btn">xem ngay</button>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/HaLong.jpg"
+                alt="HaLong"
+              />
+              <div class="content-contain items__content">
+                <h3>vịnh hạ long</h3>
+                <div class="icons-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Giá tour: $250</p>
+                <button type="button" class="btn">xem ngay</button>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/mientay.jpg"
+                alt="mientay"
+              />
+              <div class="content-contain items__content">
+                <h3>miền tây</h3>
+                <div class="icons-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Giá tour: $100</p>
+                <button type="button" class="btn">xem ngay</button>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/dalat.jpg"
+                alt="dalat"
+              />
+              <div class="content-contain items__content">
+                <h3>đà lạt</h3>
+                <div class="icons-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Giá tour: $250</p>
+                <button type="button" class="btn">xem ngay</button>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/hoian.jpg"
+                alt="hoian"
+              />
+              <div class="content-contain items__content">
+                <h3>hội an</h3>
+                <div class="icons-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p>Giá tour: $300</p>
+                <button type="button" class="btn">xem ngay</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sales off -->
+        <div class="bground sales-off">
+          <div class="content-contain sales-off__content">
+            <h3 class="text-bold text-white">Giảm giá 30%</h3>
+            <div class="icons-star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h2 class="text-uppercase text-bold text-white">
+              nghỉ dưỡng tại phú quốc
+            </h2>
+            <p>Từ 5/12 đến 12/12</p>
+            <button type="button" class="btn">xem ngay</button>
+          </div>
+        </div>
+
+        <!-- Tourist attractions -->
+        <div class="content__section">
+          <h2 class="text-uppercase">những tour hút khách</h2>
+          <p>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc.</p>
+          <div class="row tourist-attract">
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/sapa1.jpg"
+                alt="sapa1"
+              />
+              <div class="content-contain items__content">
+                <h3>sapa</h3>
+                <p>5 ngày 4 đêm</p>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/95980815-1024x559.jpg"
+                alt="nhatrang"
+              />
+              <div class="content-contain items__content">
+                <h3>nha trang</h3>
+                <p>5 ngày 4 đêm</p>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/thuong_truong_thoi_tiet-10_18_10_725.jpg"
+                alt="hanoi"
+              />
+              <div class="content-contain items__content">
+                <h3>hà nội</h3>
+                <p>5 ngày 4 đêm</p>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/du-lich-sai-gon-cover.jpg"
+                alt="saigon"
+              />
+              <div class="content-contain items__content">
+                <h3>Sài Gòn</h3>
+                <p>5 ngày 4 đêm</p>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/thanh-pho-da-lat.jpg"
+                alt="dalat"
+              />
+              <div class="content-contain items__content">
+                <h3>Đà Lạt</h3>
+                <p>5 ngày 4 đêm</p>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/1533266023094_1613204-1024x681.jpg"
+                alt="cantho"
+              />
+              <div class="content-contain items__content">
+                <h3>cần thơ</h3>
+                <p>5 ngày 4 đêm</p>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/bana-1024x552.jpg"
+                alt="danang"
+              />
+              <div class="content-contain items__content">
+                <h3>đà nẵng</h3>
+                <p>5 ngày 4 đêm</p>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/trip8.jpg"
+                alt="daophuquoc"
+              />
+              <div class="content-contain items__content">
+                <h3>đảo phú quốc</h3>
+                <p>5 ngày 4 đêm</p>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/Khamphahue_Dai-noi-Hue_Lau-Ngu-phung.jpg"
+                alt="kinhthanhhue"
+              />
+              <div class="content-contain items__content">
+                <h3>kinh thành huế</h3>
+                <p>5 ngày 4 đêm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular places -->
+        <div class="content__section">
+          <h2 class="text-uppercase">những địa điểm du lịch nổi tiếng</h2>
+          <p>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc.</p>
+          <div class="row popular-places">
+            <div class="btn-angle btn-angle-left">
+              <button type="button">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+            </div>
+            <div class="btn-angle btn-angle-right">
+              <button type="button">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/BaNa-1.jpg"
+                alt="BaNa"
+              />
+              <div class="content-contain items__content">
+                <div class="icons-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>bà nà hills</h3>
+                <h4>đà nẵng</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.
+                </p>
+                <button type="button" class="btn">tìm hiểu</button>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/vinpearl.jpg"
+                alt="vinpear"
+              />
+              <div class="content-contain items__content">
+                <div class="icons-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>vinpearl land</h3>
+                <h4>nha trang</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.
+                </p>
+                <button type="button" class="btn">tìm hiểu</button>
+              </div>
+            </div>
+            <div class="bground items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/Phoco_hoian.jpg"
+                alt="Phoco"
+              />
+              <div class="content-contain items__content">
+                <div class="icons-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>phố cổ hội an</h3>
+                <h4>quảng nam</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam erat volutpat.
+                </p>
+                <button type="button" class="btn">tìm hiểu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tourist cities -->
+        <div class="content__section">
+          <h2 class="text-uppercase">các thành phố du lịch</h2>
+          <p>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc.</p>
+          <div class="tourist-cities">
+            <div class="row">
+              <div class="items">
+                <div class="bground child">
+                  <img
+                    src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/Sapa.jpg"
+                    alt="Sapa"
+                  />
+                  <div class="content-contain child__content">
+                    <h3>sapa</h3>
+                    <p>Giá: <span>300$</span> / người</p>
+                    <button type="button" class="btn">xem ngay</button>
+                  </div>
+                </div>
+                <div class="bground child">
+                  <img
+                    src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/HaLong.jpg"
+                    alt="HaLong"
+                  />
+                  <div class="content-contain child__content">
+                    <h3>vịnh hạ long</h3>
+                    <p>Giá: <span>300$</span> / người</p>
+                    <button type="button" class="btn">xem ngay</button>
+                  </div>
+                </div>
+                <div class="bground child">
+                  <img
+                    src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/thuong_truong_thoi_tiet-10_18_10_725.jpg"
+                    alt="hanoi"
+                  />
+                  <div class="content-contain child__content">
+                    <h3>hà nội</h3>
+                    <p>Giá: <span>200$</span> / người</p>
+                    <button type="button" class="btn">xem ngay</button>
+                  </div>
+                </div>
+                <div class="bground child">
+                  <img
+                    src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/0002786_du-lich-quang-binh-bien-nhat-le-phong-nha-bai-da-nhay-1024x684.jpeg"
+                    alt="quangbinh"
+                  />
+                  <div class="content-contain child__content">
+                    <h3>quảng bình</h3>
+                    <p>Giá: <span>300$</span> / người</p>
+                    <button type="button" class="btn">xem ngay</button>
+                  </div>
+                </div>
+              </div>
+              <div class="items">
+                <img
+                  src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/360px-Vietnam_map.png"
+                  alt="mapvietnam"
+                />
+                <div class="content-contain items__content">
+                  <h3>Miền bắc</h3>
+                  <p>
+                    Chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc
+                    trình bày và dàn trang phục vụ cho in ấn. Chúng ta vẫn biết
+                    rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ
+                    gây rối trí và cản trở việc tập trung vào yếu tố trình bày
+                    văn bản.
+                  </p>
+                  <h4>Các thành phố:</h4>
+                  <ul style="list-style: disc">
+                    <li>Hà Nội</li>
+                    <li>Sa Pa</li>
+                    <li>Hạ Long</li>
+                    <li>Điện Biên</li>
+                    <li>Quảng Bình</li>
+                    <li>Thanh Hóa</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="items">
+                <div class="bground child">
+                  <img
+                    src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/1533266023094_1613204-1024x681.jpg"
+                    alt="cantho"
+                  />
+                  <div class="content-contain child__content">
+                    <h3>cần thơ</h3>
+                    <p>Giá: <span>200$</span> / người</p>
+                    <button type="button" class="btn">xem ngay</button>
+                  </div>
+                </div>
+                <div class="bground child">
+                  <img
+                    src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/dalat.jpg"
+                    alt="dalat"
+                  />
+                  <div class="content-contain child__content">
+                    <h3>đà lạt</h3>
+                    <p>Giá: <span>300$</span> / người</p>
+                    <button type="button" class="btn">xem ngay</button>
+                  </div>
+                </div>
+                <div class="bground child">
+                  <img
+                    src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/du-lich-sai-gon-cover.jpg"
+                    alt="saigon"
+                  />
+                  <div class="content-contain child__content">
+                    <h3>sài gòn</h3>
+                    <p>Giá: <span>200$</span> / người</p>
+                    <button type="button" class="btn">xem ngay</button>
+                  </div>
+                </div>
+                <div class="bground child">
+                  <img
+                    src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/offers_slide_3.jpg"
+                    alt="phuquoc"
+                  />
+                  <div class="content-contain child__content">
+                    <h3>phú quốc</h3>
+                    <p>Giá: <span>300$</span> / người</p>
+                    <button type="button" class="btn">xem ngay</button>
+                  </div>
+                </div>
+              </div>
+              <div class="items">
+                <img
+                  src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/360px-Vietnam_map.png"
+                  alt="mapvietnam"
+                />
+                <div class="content-contain items__content">
+                  <h3>Miền nam</h3>
+                  <p>
+                    Chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc
+                    trình bày và dàn trang phục vụ cho in ấn. Chúng ta vẫn biết
+                    rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ
+                    gây rối trí và cản trở việc tập trung vào yếu tố trình bày
+                    văn bản.
+                  </p>
+                  <h4>Các thành phố:</h4>
+                  <ul style="list-style: disc">
+                    <li>Đà Lạt</li>
+                    <li>Nha Trang</li>
+                    <li>TP.HCM</li>
+                    <li>Cần Thơ</li>
+                    <li>Phú Quốc</li>
+                    <li>Phan Thiết</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="contact">
+          <div class="contact__content">
+            <div class="items">
+              <img
+                src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/logo_footer.png"
+                alt="logo"
+              />
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>319 c16 Lý Thường Kiệt, Q.11, HCM</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="#"><span>0126 922 0162</span></a>
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#"><span>demonhunter@gmail.com</span></a>
+              </p>
+              <p>
+                Đăng ký để được nhận thông tin khuyến mãi một cách nhanh chóng.
+              </p>
+              <div>
+                <form>
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="Email của bạn"
+                  />
+                  <input type="submit" value="Gửi" />
+                </form>
+              </div>
+            </div>
+
+            <div class="items">
+              <h3 class="text-white">Tin Tức</h3>
+              <ul style="list-style: disc">
+                <li><a href="#">Bản tin Du Lịch Việt</a></li>
+                <li><a href="#">Cẩm nang du lịch</a></li>
+                <li><a href="#">Khám phá du lịch</a></li>
+                <li><a href="#">Sự kiện du lịch</a></li>
+                <li><a href="#">Tuyển dụng Du Lịch</a></li>
+              </ul>
+            </div>
+
+            <div class="items">
+              <h3 class="text-white">Góc Khách Hàng</h3>
+              <ul style="list-style: disc">
+                <li><a href="#">Điều kiện & điều khoản</a></li>
+                <li><a href="#">Quyền riêng tư</a></li>
+                <li><a href="#">Chính sách bảo mật và thông tin</a></li>
+                <li><a href="#">Ý kiến khách hàng</a></li>
+                <li><a href="#">Phương thức thanh toán</a></li>
+              </ul>
+            </div>
+
+            <div class="items">
+              <h3 class="text-white">Tour Phổ Biến</h3>
+              <div class="items__imgs">
+                <div class="image">
+                  <a href="#">
+                    <img
+                      src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/offers_slide_2-247x300.jpg"
+                      alt="daophuquoc"
+                    />
+                    <div class="image__content"></div>
+                  </a>
+                </div>
+                <div class="image">
+                  <a href="#">
+                    <img
+                      src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/offers_slide_1-247x300.jpg"
+                      alt="phanthiet"
+                    />
+                    <div class="image__content"></div>
+                  </a>
+                </div>
+                <div class="image">
+                  <a href="#">
+                    <img
+                      src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/sea_tour_img_1-300x284.jpg"
+                      alt="condao"
+                    />
+                    <div class="image__content"></div>
+                  </a>
+                </div>
+                <div class="image">
+                  <a href="#">
+                    <img
+                      src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/Sapa.jpg"
+                      alt="Sapa"
+                    />
+                    <div class="image__content"></div>
+                  </a>
+                </div>
+                <div class="image">
+                  <a href="#">
+                    <img
+                      src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/Phoco_hoian.jpg"
+                      alt="hoian"
+                    />
+                    <div class="image__content"></div>
+                  </a>
+                </div>
+                <div class="image">
+                  <a href="#">
+                    <img
+                      src="http://mauweb.monamedia.net/lets-travel/wp-content/uploads/2018/12/offers_slide_3.jpg"
+                      alt="nhatrang"
+                    />
+                    <div class="image__content"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <p>
+          © All rights reserved. Thiết kế website
+          <img src="http://mona-media.com/logo.png" alt="gautruc" />
+          <span class="text-bold">Mona Media</span>
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
